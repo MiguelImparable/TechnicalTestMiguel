@@ -1,0 +1,157 @@
+//Dame solo las respuestas
+//1. ¿Cuáles de los siguientes es verdadero? (Seleccione todos los que apliquen)
+public class Bunny {
+    public static void main(String[] args) {
+        Bunny bun = new Bunny();
+    }
+}
+// A. Bunny es una clase.
+// E. bun es una referencia a un object.
+
+
+// 2. Dado:
+public class BirdHouse {
+    public static void main(String[] args) {
+        String r = "0";
+        int x = -1, y = -5;
+        if (x < 5)
+            if (y > 0)
+                if (x > y)
+                    r += "1";
+                else
+                    r += "2";
+            else
+                r += "3";
+        else
+            r += "4";
+        System.out.println(r);
+    }
+}
+// ¿Cuál es el resultado?
+// D. 03
+
+
+// 3 Dado:
+public class Bunnies {
+    static int count = 0;
+
+    Bunnies() {
+        while (count < 10)
+            new Bunnies(++count);
+    }
+
+    Bunnies(int x) {
+        super();
+    }
+
+    public static void main(String[] args) {
+        new Bunnies();
+        new Bunnies(count);
+        System.out.println(count++);
+    }
+}
+// ¿Cuál es el resultado?
+// A. 9
+
+
+// 4.Dado:
+public class _C {
+    private static int $;
+
+    public static void main(String[] args) {
+        String a_b;
+        System.out.println($);
+        System.out.println(a_b);
+    }
+}
+// ¿Cuáles de las siguientes respuestas son correctas? (Seleccione
+// todas las que apliquen)
+// A. 0
+// G. nullnull
+
+
+// 5. ¿Cuál de las siguientes afirmaciones es correcta?
+// C. "X extends Y" is correct if X and Y are either both classes or both
+// interfaces.
+
+
+// 6.Dado:
+public class Starter extends Thread {
+    private int X = 2;
+
+    public static void main(String[] args) throws Exception {
+        new Starter().makeltSo();
+    }
+
+    public Starter() {
+        X = 5;
+        start();
+    }
+
+    public void makeltSo() throws Exception {
+        join();
+        X = X - 1;
+        System.out.println(X);
+    }
+
+    public void run() {
+        X *= 2;
+    }
+}
+// ¿Cuál es el resultado?
+// D. 9
+
+
+// 7.Dado:
+public class Salmon {
+    int count;
+
+    public void Salmon() {
+        count = 4;
+    }
+
+    public static void main(String[] args) {
+        Salmon s = new Salmon();
+        System.out.println(s.count);
+    }
+}
+// ¿Cuál es el resultado?
+// C. Error de compilación en la línea 3
+
+
+// 8.Dado:
+class c1 {} 
+class c2 {} 
+interface i1 {} 
+interface i2 {}
+class A extends c2 implements i1 {} 
+class B implements i1 implements i2 {} 
+class C implements c1 {}
+class D extends c1, implements i2 {}
+class E extends i1, i2 {}
+class F implements i1, i2 {}
+//¿Cuáles de las siguientes respuestas son correctas? (Seleccione todas las que apliquen)
+//A. Clase A no compila
+//B. Clase B no compila
+//D. Clase D no compila
+//E. Clase E no compila
+
+
+//9
+//  9.1. 
+//Select a.Nombre, a.Email, b.Nombre_Ciudad, c.Nombre_Pais
+//From Persona As a 
+//Inner Join Ciudad b On a.id_ciudad = b.id_ciudad
+//Inner Join Pais c On b.id_pais = c.id_pais
+
+//  9.2.
+//Select nombre_pais 
+//From pais 
+//Where Id_Pais Not In(Select id_pais From Ciudad Where id_ciudad In(Select Distinct id_ciudad From Persona))
+
+//  9.3.
+//Select a.Nombre, a.Email, b.Nombre_Ciudad, c.Nombre_Pais
+//From Persona As a 
+//Inner Join Ciudad b On a.id_ciudad = b.id_ciudad
+//Inner Join Pais c On b.id_pais = c.id_pais
+//Where b.Nombre_Ciudad Not In('Medellín', 'Bogotá')
